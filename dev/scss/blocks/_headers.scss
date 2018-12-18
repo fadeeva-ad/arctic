@@ -1,0 +1,40 @@
+@import 'variables';
+
+.h1{
+	color: $dark-blue;
+	margin: 0;
+	font-weight: 500;
+	line-height: 36px;
+	font-size: 36px; 
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.h2{
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 45px;
+	margin: 0;
+
+	@include container {
+		font-size: 28px;
+	}
+
+	strong{
+		font-weight: 600;
+	}
+	
+}
+
+.title_h1{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 36px;
+	text-transform: uppercase;
+	
+	@include container {
+		font-size: 32px;
+	}
+}

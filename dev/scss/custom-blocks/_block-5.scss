@@ -1,0 +1,121 @@
+@import '../blocks/variables';
+
+.block-5 {
+    .container {
+        position: relative;
+    }
+
+    &__bg {
+        max-width: 100%;
+    }
+
+    &__iceberg {
+        position: relative;
+        margin-top: 76px;
+    }
+
+    &__front {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__dashed {
+        position: relative;
+        top: -20px;
+        left: 120px;
+    }
+
+    &__list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        max-width: 391px;
+
+        &:before {
+            position: absolute;
+            top: 4px;
+            left: -74px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: #256095;
+            content: '';
+        }
+
+        &:nth-child(1) {
+            top: 12px;
+            left: 447px;
+        }
+
+        &:nth-child(2) {
+            top: 268px;
+            left: 221px;
+            max-width: 324px;
+        }
+
+        &:nth-child(3) {
+            top: 462px;
+            left: 617px;
+        }
+    }
+
+    &__text {
+        margin-top: 28px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__subtitle {
+        margin: 0;
+        line-height: 36px;
+        letter-spacing: 0.04em;
+        color: #4492D8;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        align-self: flex-end;
+        text-decoration: none;
+        color: black;
+
+        svg {
+            margin-left: 10px;
+            transition: all ease-out 0.3s;
+        }
+
+        &:hover {
+            svg {
+                transform: translateX(10px);
+
+            }
+        }
+    }
+
+    &__download {
+        position: absolute;
+        bottom: 161px;
+        left: 50%;
+        width: 455px;
+        transform: translateX(-50%);
+    }
+
+    &__btn {
+        margin-top: 148px;
+    }
+}

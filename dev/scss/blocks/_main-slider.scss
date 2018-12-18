@@ -1,0 +1,32 @@
+@import 'variables';
+
+.main-slider {
+    padding-top: 25px;
+
+    .container {
+        position: relative;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &_prev {
+            left: 0;
+        }
+
+        &_next {
+            right: 0;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+    .swiper-slide{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

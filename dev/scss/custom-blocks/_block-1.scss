@@ -1,0 +1,49 @@
+@import '../blocks/variables';
+
+.block-1 {
+    padding-top: 97px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 122px;
+    }
+
+    &__img {
+        margin-right: 30px;
+    }
+
+    &__line {
+        margin-bottom: 18px;
+        width: 100px;
+        height: 2px;
+        background-color: $dark-blue;
+    }
+
+    &__item-title {
+        h2 {
+            margin: 0;
+            text-transform: uppercase;
+            line-height: 36px;
+            letter-spacing: 0.04em;
+            font-size: 36px;
+            font-weight: 500;
+            color: $dark-blue;
+        }
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text {
+        line-height: 26px;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        font-weight: 300;
+        color: #256095;
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+@import 'variables';
+
+.container { 
+    max-width: $container-width;
+    margin: auto;
+    width: 100%;
+
+    &_m{
+        max-width: 1065px;
+    }
+
+    &_l{
+        max-width: 1161px;
+    }
+
+    @include container {
+        padding: 0px 30px; 
+    }
+
+    @include tablet {
+        padding: 0 20px;  
+    }
+
+    @include mobile {
+        padding: 0 14px;
+    }
+}
+ 
+
+.page { 
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: $light-blue;
+	font-family: 'Museo Sans Cyrl';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+
+
+@import 'fancybox';
+@import 'swiper';
+@import 'animate';
+@import 'input';
+@import 'headers';
+@import 'btn';
+@import 'menu-btn';
+@import 'header';
+@import 'main-slider'; 
+@import 'footer';
+@import 'form';
+@import 'menu';

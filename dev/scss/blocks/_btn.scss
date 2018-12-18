@@ -1,0 +1,44 @@
+@import 'variables';
+
+.btn {
+	display: block;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	width: 544px;
+	border: 0;
+	border-radius: 40px;
+	background: #426FAD;
+	padding: 18px 0;
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+	text-align: center;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 25px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+	user-select: none;
+	pointer-events: auto;
+
+
+	&:hover {
+		background-color: darken(#426FAD, 10%);
+	}
+
+	&_white {
+		background-color: #fff;
+		color: $dark-blue;
+		font-weight: 500;
+		border-radius: 95px;
+
+		&:hover {
+			background-color: darken(#FFF, 10%);
+		}
+	}
+
+}
