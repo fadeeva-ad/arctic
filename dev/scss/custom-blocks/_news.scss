@@ -12,6 +12,7 @@
         font-size: 36px;
         font-weight: 300;
         display: inline-block;
+        text-decoration: none;
 
         &:before {
             position: absolute;
@@ -30,9 +31,20 @@
         column-gap: 26px;
         row-gap: 36px;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'xl s''xl m''l l';
+        grid-template-areas: 
+        'xl s'
+        'xl m'
+        'l l';
         margin-top: 43px;
         text-decoration: none;
+
+        &_full-news {
+            grid-template-areas: 
+            'xl s'
+            'xl m'
+            'l l'  
+            'l l';
+        }
     }
 
     &__list-item {
@@ -57,6 +69,7 @@
 
         &:nth-child(4) {
             grid-area: l; 
+            padding-bottom: 25%;
         }
     }
 

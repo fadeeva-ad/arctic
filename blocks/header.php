@@ -16,10 +16,10 @@
                         <a href="programm.php" class="header__link">программа</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="" class="header__link">участникам</a>
+                        <a href="participants-page.php" class="header__link">участникам</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="" class="header__link">партнерам</a>
+                        <a href="partners.php" class="header__link">партнерам</a>
                     </li>
                     <li class="header__list-item">
                         <a href="contacts.php" class="header__link">контакты</a>

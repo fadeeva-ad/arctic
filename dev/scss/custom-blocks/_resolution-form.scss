@@ -1,0 +1,59 @@
+@import '../blocks/variables';
+
+.form {
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  &__block {
+    display: flex;
+  }
+  &__label {
+
+
+ 
+    &_s {
+      max-width: 327px;
+      margin-right: 130px;
+    }
+   }
+
+  &__txt {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    width: 100%;
+
+    &_dot {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #CC3327;
+        position: absolute;
+      }
+    }
+  }
+  &__input {
+    border: 2px solid #3E66AC;
+    box-sizing: border-box;
+    border-radius: 14px;
+    outline: none;
+    display: block;
+    height: 43px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0px 15px;
+
+    &_big {
+      height: 148px;
+      width: 100%;
+    }
+  }
+}

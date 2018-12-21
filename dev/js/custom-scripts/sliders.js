@@ -1,11 +1,11 @@
-import Swioer from 'swiper';
+import Swiper from 'swiper';
 import {
     arctic
 } from '../mainJs.js';
 
 arctic.sliders = {
     mainSlider: function () {
-        var mainSlider = new Swioer(".main-slider .swiper-container", {
+        var mainSlider = new Swiper(".main-slider .swiper-container", {
             loop: true,
             navigation: {
                 prevEl: ".main-slider__arrow_prev",

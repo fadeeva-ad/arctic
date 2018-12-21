@@ -65,28 +65,9 @@
             </div>
         </div>
     </div>
-    <div class="news">
-        <div class="container container_m">
-            <h2 class="news__title">новости</h2>
-            <div class="news__list">
-                <a href="javascript:;" class="news__list-item" style="background-image: url('production/img/default.jpg');">
-                    <div class="news__item-title">
-                        Встал, умылся, убери Арктику: зачем волонтеры очищают необитаемые острова
-                    </div>
-                </a>
-                <a href="javascript:;" class="news__list-item" style="background-image: url('production/img/default2.jpg');">
-                    <div class="news__item-title">
-                        Встал, умылся, убери Арктику: зачем волонтеры очищают необитаемые острова
-                    </div>
-                </a>
-                <a href="javascript:;" class="news__list-item" style="background-image: url('production/img/default2.jpg');">
-                    <div class="news__item-title">
-                        Встал, умылся, убери Арктику: зачем волонтеры очищают необитаемые острова
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
+    <?php
+      include 'blocks/news-content.php';
+    ?>
     <div class="partners">
         <img src="production/img/partners-bg.png" alt="" class="partners__bg">
         <div class="container container_m">

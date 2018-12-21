@@ -29,7 +29,9 @@
 	&:hover {
 		background-color: darken(#426FAD, 10%);
 	}
-
+	&_light-blue {
+		background: #A4C2F7;
+	}
 	&_white {
 		background-color: #fff;
 		color: $dark-blue;
@@ -39,6 +41,13 @@
 		&:hover {
 			background-color: darken(#FFF, 10%);
 		}
+		
+	}
+	&__block-7 {
+		margin-bottom: 46px;
 	}
 
+	&_send {
+		width: 227px;
+	}
 }
