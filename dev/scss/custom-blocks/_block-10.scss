@@ -1,0 +1,50 @@
+@import '../blocks/variables';
+
+.block-10 {
+  .container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__list {
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    max-width: 870px;
+    margin-bottom: 44px;
+    
+  }
+  &__list-item {
+    padding: 0;
+
+  }
+
+  &__link-item {
+    text-decoration: none;
+    color:#628FCE;
+    font-size: 24px;
+    
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $light-blue;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+}

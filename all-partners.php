@@ -41,15 +41,15 @@
   Миссия компании - предоставлять потребителям энергоресурсы высокого качества, вести бизнес честно и ответственно, заботиться о сотрудниках и быть лидером по эффективности, обеспечивая долгосрочный и сбалансированный рост компании.</p>
             </div>	
           </div>
-        <ul class="block-8__pages">
-          <li class="block-8__page">
-          <a href="all-partners.php" class="block-8__link block-8__link_partners">1
+        <ul class="pages">
+          <li class="pages__page">
+          <a href="all-partners.php" class="pages__link pages__link_partners">1
           </li>
-          <li class="block-8__page">
-          <a href="all-partners.php" class="block-8__link block-8__link_partners">2
+          <li class="pages__page">
+          <a href="all-partners.php" class="pages__link pages__link_partners">2
           </li>
-          <li class="block-8__page">
-          <a href="all-partners.php" class="block-8__link block-8__link_partners">3
+          <li class="pages__page">
+          <a href="all-partners.php" class="pages__link pages__link_partners">3
           </li>
         </ul>
         </div>

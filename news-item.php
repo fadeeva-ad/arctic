@@ -27,7 +27,7 @@
 			</article>
 			<p class="block-6__autor">Источник: Северный Олень</p>
 			<a href="news.php" class="block-8__link block-8__link_text">Все новости
-					<img src="production/img/icons/small-arrow.svg" alt="arrow-right" class="block-8__icon svg"></a>
+					<img src="production/img/icons/small-arrow.svg" alt="arrow-right" class="arrow-icon svg"></a>
 			</div>
 		</div>
     <?php include 'blocks/footer.php';?>

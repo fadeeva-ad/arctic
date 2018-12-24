@@ -25,7 +25,7 @@
                         <a href="contacts.php" class="header__link">контакты</a>
                     </li>
                     <li class="header__list-item">
-                        <a href="" class="header__link">архив</a>
+                        <a href="archive-page.php" class="header__link">архив</a>
                     </li>
                 </ul>
             </nav>

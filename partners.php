@@ -26,6 +26,7 @@
 				<div class="block-7__item block-7__item_btn">
 					<a href="javascript:;" role="button" class="btn btn__block-7">стань партнером <br>  школы арктики</a>
 			  </div>
+			</div>
 		</div>
 		<div class="block-8">
 		<img src="production/img/snow.jpg" alt="bg-snow" class="block-7__bg">
@@ -62,7 +63,7 @@
 					</div>
 				</div>
 				<a href="all-partners.php" class="block-8__link block-8__link_text">Все партнеры
-					<img src="production/img/icons/small-arrow.svg" alt="arrow-right" class="block-8__icon svg"></a>
+					<img src="production/img/icons/small-arrow.svg" alt="arrow-right" class="arrow-icon svg"></a>
 			</div>
 		</div>
     <?php include 'blocks/footer.php';?>

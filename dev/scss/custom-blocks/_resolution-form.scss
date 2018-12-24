@@ -8,11 +8,10 @@
   }
   &__block {
     display: flex;
+    margin-bottom: 65px;
   }
   &__label {
-
-
- 
+    width: 100%;
     &_s {
       max-width: 327px;
       margin-right: 130px;
@@ -25,20 +24,9 @@
     font-size: 18px;
     color: #000000;
     text-transform: uppercase;
-    width: 100%;
+    margin-bottom: 15px;
 
-    &_dot {
-      position: relative;
 
-      &::before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: #CC3327;
-        position: absolute;
-      }
-    }
   }
   &__input {
     border: 2px solid #3E66AC;
@@ -50,10 +38,38 @@
     width: 100%;
     font-size: 18px;
     padding: 0px 15px;
+    resize: none;
 
     &_big {
       height: 148px;
       width: 100%;
+      padding-top: 10px;
+    }
+  }
+
+  &__footnote {
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 18px;
+    position: relative;
+    display: inline-block;
+
+  }
+  &__required-dot {
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #CC3327;
+      position: absolute;
+      top: 35%;
+      right: -15px;
     }
   }
 }
+

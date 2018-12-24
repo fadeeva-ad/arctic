@@ -73,50 +73,5 @@
     font-size: 18px;
     color: #000000;
   }
-  &__pages {
-    align-self: center;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    height: 45px;
-    align-items: flex-end;
-    justify-content: space-evenly;
-  }
 
-  &__page {
-    color: inherit;
-    font-size: 24px;
-    padding-right: 10px;
-    width: 30px;
-
-  }
-
-  &__link {
-    text-align: center;
-    text-decoration: none;
-    &_text {
-      font-size: 24px;
-      color: $light-blue;
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-    &_partners {
-      color: #000000;
-      font-size: 36px;
-
-      &:hover,
-      &:active {
-        color: $light-blue;
-        font-size: 48px;
-      }
-    }
-  }
-
-  &__icon {
-    stroke: $dark-blue;
-    stroke-width: 0.5px;
-    width: 26px;
-    height: 33px;
-    vertical-align: bottom;
-  }
 }
