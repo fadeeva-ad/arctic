@@ -5,6 +5,10 @@
     position: relative;
     overflow: hidden;
 
+    @include mobile {
+        padding-top: 50px;
+    } 
+
     .container {
         display: flex;
         flex-direction: column;
@@ -31,12 +35,21 @@
         color: $soft-blue;
         font-size: 36px;
         font-weight: 900;
+
+        @include mobile {
+            font-size: 26px;
+            line-height: 34px;
+        } 
     }
 
     &__item {
         display: flex;
         align-items: center;
         margin-top: 35px;
+
+        @include mobile {
+            flex-direction: column;
+        } 
 
         &_left {
             align-self: flex-start;
@@ -51,10 +64,22 @@
         }
     }
 
+    &__img {
+
+        @include mobile {
+            width: 40%;
+            margin-bottom: 25px;
+        } 
+    }
+
     &__text-wrapper {
         margin-left: 50px;
         max-width: 461px;
         font-weight: 300;
+
+        @include mobile {
+            margin-left: 0;
+        }
     }
 
     &__text {
@@ -62,6 +87,11 @@
         line-height: 26px;
         letter-spacing: 0.01em;
         font-size: 18px;
+
+        @include small-mobile {
+            line-height: 23px;
+            font-size: 16px;
+        } 
     }
 
     &__subtitle {

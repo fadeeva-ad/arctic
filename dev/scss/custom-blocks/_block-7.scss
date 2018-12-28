@@ -34,10 +34,16 @@
     padding-bottom: 80px;
     align-self: center;
 
+    @include mobile {
+      flex-direction: column;
+      padding-bottom: 40px;
+      width: 100%;
+    }
+
     &_btn {
       flex-direction: column;
       padding-bottom: 0;
-    }
+      }
   }
   &__subtitle {
   font-size: 36px;
@@ -48,12 +54,18 @@
   }
 
   &__text {
-    max-width: 508px;
+    max-width: 50%;
     margin: 0;
     color: $light-blue;
     line-height: 26px;
     font-size: 18px;
     font-weight: 300;
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 15px ;
+      font-size: 16px;
+    }
 
   }
 
@@ -61,6 +73,11 @@
     max-width: 304px;
     align-self: center;
     margin-bottom: 86px;
+
+    @include mobile {
+      max-width: 70%;
+      margin-bottom: 43px ;
+    }
   }
 
   &__img {

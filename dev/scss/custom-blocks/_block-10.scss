@@ -1,10 +1,10 @@
 @import '../blocks/variables';
 
 .block-10 {
-  .container {
-      display: flex;
-      flex-direction: column;
-  }
+  // .container {
+  //     display: flex;
+  //     flex-direction: column;
+  // }
 
   &__header {
     display: flex;
@@ -25,7 +25,11 @@
     display: flex;
     max-width: 870px;
     margin-bottom: 44px;
-    
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__list-item {
     padding: 0;

@@ -6,6 +6,11 @@
     padding-bottom: 40px;
     position: relative;
 
+    @include mobile {
+        padding-top: 50px;
+        margin-top: 0;
+      }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -23,6 +28,11 @@
         font-size: 36px;
         font-weight: 300;
 
+        @include mobile {
+            font-size: 24px;
+            line-height: 24px;
+        }
+
         &:before {
             position: absolute;
             top: 50%;
@@ -32,6 +42,10 @@
             background-color: $dark-blue;
             transform: translate(-100%, -50%);
             content: '';
+
+            @include mobile {
+                width: 40px;
+            }
         }
     }
 

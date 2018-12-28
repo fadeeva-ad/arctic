@@ -1,6 +1,15 @@
 @import '../blocks/variables';
 
 .tab {
-  display: flex;
-  flex-direction: column;
+  display: none;
+  // display: flex;
+  &_active {
+    display: flex;
+    flex-direction: column;
   }
+}
+
+.block-10__link-item_active {
+  color: #3C78BD;
+  font-weight: 700;
+}

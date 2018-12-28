@@ -12,6 +12,25 @@
         align-items: center;
         justify-content: space-between;
         z-index: 1;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        @include small-mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+
+        @include mobile {
+            align-self: center;
+        }
+
+        @include small-mobile {
+            margin-bottom: 15px;
+        }
     }
 
     &__bg {
@@ -40,6 +59,10 @@
 
             &__action {
                 margin-top: 43px;
+
+                @include mobile {
+                    align-self: center;
+                }
             }
 
             &__bg {
@@ -50,7 +73,13 @@
 
     }
 
-
+    &__center {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 
     &__title {
         display: none;
@@ -63,6 +92,12 @@
         color: $dark-blue;
         font-size: 64px;
         font-weight: 500;
+
+        @include mobile {
+            align-self: center;
+            font-size: 36px;
+            line-height: 36px;
+        }
     }
 
     &__subtitle {
@@ -76,12 +111,25 @@
         color: $dark-blue;
         font-size: 36px;
         font-weight: 300;
+
+        @include mobile {
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
         margin: 0;
         padding: 0;
         list-style-type: none;
+        padding: 0 15px;
+
+        @include mobile {
+            align-self: center;
+        }
+
+        @include small-mobile {
+            margin-bottom: 15px;
+        }
     }
 
     &__list-item {
@@ -136,6 +184,7 @@
 
     &__soc {
         margin-top: 26px;
+        display: flex;
     }
 
     &__soc-item {
@@ -148,6 +197,14 @@
         color: $dark-blue;
         font-size: 24px;
         font-weight: 100;
+
+        @include desktop {
+            margin-right: 10px; 
+        }
+
+        @include small-mobile {
+            margin-right: 30px;
+        }
     }
 }
 

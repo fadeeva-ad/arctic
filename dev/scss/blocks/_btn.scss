@@ -15,7 +15,6 @@
 	cursor: pointer;
 	transition: all 0.25s ease-out;
 	text-align: center;
-	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
 	line-height: 25px;
@@ -25,12 +24,20 @@
 	user-select: none;
 	pointer-events: auto;
 
+	@include mobile {
+		width: 80%;
+		font-size: 16px;
+	} 
 
 	&:hover {
 		background-color: darken(#426FAD, 10%);
 	}
 	&_light-blue {
 		background: #A4C2F7;
+
+		@include mobile {
+			width: 100%;
+		} 
 	}
 	&_white {
 		background-color: #fff;
@@ -45,14 +52,34 @@
 	}
 	&__block-7 {
 		margin-bottom: 46px;
+
+		@include mobile {
+			width: 100%;
+
+		} 
 	}
 
 	&_send {
 		width: 227px;
 	}
+	
 	&_archive {
 		width: 410px;
 		background: #4F99DA;
 		margin-top:100px;
+
+		@include mobile {
+      width: 100%;
+    }
 	}
+
+	@include mobile {
+		font-size: 16px;
+	} 
+
+	@include small-mobile {
+		width: 80%;
+		font-size: 13px;
+		line-height: 20px;
+	} 
 }

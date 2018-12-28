@@ -5,10 +5,18 @@
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 10px;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
   &__block {
     display: flex;
     margin-bottom: 65px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__label {
     width: 100%;
@@ -26,6 +34,9 @@
     text-transform: uppercase;
     margin-bottom: 15px;
 
+    @include mobile {
+      font-size: 14px;
+    }
 
   }
   &__input {

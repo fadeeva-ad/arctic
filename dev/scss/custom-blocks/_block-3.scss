@@ -21,6 +21,19 @@
         position: relative;
         z-index: 1;
 
+        @include mobile {
+            line-height: 24px;
+            font-size: 16px;
+            margin-top: 50px;
+
+        }
+
+        @include small-mobile {
+            line-height: 20px;
+            font-size: 14px;
+        }  
+        
+
         &:before{
             content: '';
             background-color: $light-blue; 
@@ -77,6 +90,15 @@
         top: 50%;
         transform: translate(50%, -70%);
         z-index: -1;
+
+        @include medium-desktop {
+            transform: translate(20%,-70%);
+        }
+
+        @include tablet {
+            transform: translate(0%, -70%);
+            max-width: 300px;     
+        }
     }
 
     &__text {

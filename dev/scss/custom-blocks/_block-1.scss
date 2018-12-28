@@ -7,10 +7,21 @@
         display: flex;
         justify-content: space-between;
         margin-top: 122px;
+
+        @include tablet {
+            flex-direction: column;
+        }
+      
     }
 
     &__img {
         margin-right: 30px;
+        width: 100%;
+
+        @include tablet {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
     }
 
     &__line {
@@ -18,6 +29,10 @@
         width: 100px;
         height: 2px;
         background-color: $dark-blue;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__item-title {
